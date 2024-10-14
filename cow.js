@@ -18,7 +18,7 @@ function next() {
   const cap = caps.find(
     (child) =>
       !child.textContent.includes("視聴済み") &&
-      child.querySelector("i").style.color === "rgb(179, 179, 179)"
+      child.querySelector('path').getAttribute('fill') === '#b3b3b3'
   );
 
   cap.childNodes?.[0].click();
